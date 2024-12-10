@@ -1,5 +1,5 @@
 function solution(routes) {
-    let camera = -30001;
+   let camera = -Infinity;
     routes.sort((a, b) => a[1] - b[1]);
     const cameraCount = routes.reduce((count, route) => {
         const min = Math.min(route[0], route[1]);
